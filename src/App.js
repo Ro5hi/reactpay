@@ -26,6 +26,21 @@ function App() {
           onChange={ e => setName(e.target.value)}
           save={e => setSave(e.target.name)}
         />
+        <input type='text'
+          name='expiration'
+          placeholder='MM/YY' 
+          value={expiration}
+          onChange={ e => setExpiration(e.target.value)}
+          save={e => setSave(e.target.name)}
+        />
+        <input type='text'
+          name='cvc'
+          placeholder='CVC'
+          value={cvc}
+          onChange={ e => setCvc(e.target.value)}
+          save={e => setSave(e.target.name)}
+        />
+        
       </form>
 
     </div>
